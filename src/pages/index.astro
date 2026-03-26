@@ -1,11 +1,19 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import { Header } from "@/components/header";
+import Layout from "../layouts/Layout.astro";
+import VideoCarousel from "@/components/video-carousel";
+import InfoSections from "@/components/InfoSections.astro";
+import FeaturesGrid from "@/components/FeaturesGrid.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <Header client:load />
+  <main>
+    <VideoCarousel client:load />
+    <InfoSections />
+	    <FeaturesGrid />
+
+  </main>
 </Layout>

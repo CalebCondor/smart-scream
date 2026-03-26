@@ -2,7 +2,7 @@
 import { Header } from "@/components/header";
 import Layout from "../layouts/Layout.astro";
 import VideoCarousel from "@/components/video-carousel";
-import InfoSections from "@/components/InfoSections.astro";
+import BentoInfo from "@/components/bento-info";
 import FeaturesGrid from "@/components/FeaturesGrid.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -12,8 +12,7 @@ import FeaturesGrid from "@/components/FeaturesGrid.astro";
   <Header client:load />
   <main>
     <VideoCarousel client:load />
-    <InfoSections />
-	    <FeaturesGrid />
-
+    <BentoInfo client:load />
+    <FeaturesGrid />
   </main>
 </Layout>
